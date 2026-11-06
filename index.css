@@ -1,0 +1,535 @@
+:root{
+    --dark:#19191B;
+    --grey:#696871;
+    --purple: #5454D4;
+    --orange:#FF7143;
+
+}
+html{
+    scroll-padding: 100px ;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "DM sans", sans-serif;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    top: 0;
+    padding-block: 30px;
+}
+[class*="__container"]{
+    max-width: 1069.9px;
+    margin-inline: auto;
+ }
+ .header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .header__list{
+    display: flex;
+    list-style: none;
+    gap: 49px;
+ }
+ ul{
+    list-style: none;
+ }
+ 
+ .header__list-link{
+    font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.47px;
+  color: var(--grey);
+  transition: color 0.3s;
+
+ }
+
+ .header__list-link.active{
+    color: var(--dark);
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 10px;
+ }
+ .header__list-link:hover{
+    color: var(--dark);
+ }
+
+ a{
+    text-decoration: none;
+ }
+ 
+ .header__button , .hero__button{
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: white;
+    padding: 19px 59px;
+    border-radius: 10px;
+    transition: 0.3s;
+ }
+  .header__button{
+    background: var(--orange);
+
+  }
+
+ .header__button:hover, .hero__button:hover{
+    opacity: 90%;
+ }
+
+ main{
+    margin-top: 141px;
+
+ }
+ 
+ .hero{
+    padding-block: 70px;
+
+ }
+
+.hero__container{
+    position: relative;
+
+}
+
+.hero__content{
+    max-width: 423px;
+    padding-block: 92px;
+
+}
+
+
+.hero__image{
+    position: absolute;
+    top: 0;
+    right: -75px;
+}
+
+.hero__title{
+    font-size: 80px;
+    max-width: 700;
+    letter-spacing: -2.5;
+    line-height: 77px;
+    color: var(--dark);
+}
+.hero__desc{
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.63px;
+    line-height: 30px;
+    color: var(--grey);
+    margin-top: 30px;
+}
+.hero__buttons{
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+.hero__button{
+    background: var(--purple);
+}
+.hero__scroll{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E7E7E7;
+    border-radius:100px;
+}
+.companies{
+    padding-block: 30px;
+
+}
+
+.companies__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features{
+    padding-block: 120px;
+    
+}
+
+.feature__container{
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature__content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 459px;
+}
+
+.feature__title{
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: -1.56px;
+    line-height: 57px;
+}
+
+.feature__desc{
+    font-size: 20px;
+    font-family: "Mulish" , sans-serif;
+    letter-spacing: -0.63px;
+    line-height: 30px;
+}
+.feature__link{
+    font-size: 17px;
+    letter-spacing: -0.63px;
+    color: var(--purple);
+     font-weight: 700;
+}
+.feature__link:hover{
+    text-decoration: underline;
+}
+.mini-features {
+    padding-block: 32px;
+}
+.mini-features__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 74px;
+}
+.mini-feature{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+.mini-features__header{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+}
+.mini-features__title{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.75px;
+    line-height: 36px;
+}
+
+.mini-features__desc{
+    font-family: "Mulish", sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+    color: var(--grey);
+}
+.mini-features__image{
+    height: 97px;
+}
+
+.subscribtion{
+    padding-block: 118px 158px;
+}
+.subscribtion__container{
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+}
+.subscribtion__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribtion__title{
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: -1.88px;
+    list-style: none;
+}
+.subscribtion__tabs{
+    display: flex;
+    border-block: 5px solid #F7F7FB;
+    border-inline: 6px solid #F7F7FB;
+    border-radius: 10px;
+}
+
+.subscribtion__tab{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    border: none;
+    background-color: #F7F7FB;
+    padding: 17px 56px;
+      border-radius: 0px 10px 10px 0px;
+      color: var(--dark);
+      cursor: pointer;
+}
+.subscribtion__tab.active{
+    background-color: var(--purple);
+    border-radius: 10px 0px 0px 10px;
+    color: white;
+
+}
+.subscribtion__plans{
+    display: grid;
+    grid-template-columns: 330fr 376fr 330fr;
+    gap: 17px;
+}
+.subscribtion__plan{
+    padding: 34px 23px 27px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+}
+.subscribtion__plan-title{
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.56px;
+    line-height: 28px;
+    color: var(--grey);
+}
+
+.subscribtion__plan-price{
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: -1.03px;
+    line-height: 56px;
+    color: var(--dark);
+    margin-top: 22px;
+}
+.subscribtion__plan-price >span {
+    font-size: 28px;
+}
+.subscribtion__plan-features{
+    font-family: "Mulish", sans-serif;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    line-height: 50px;
+    color: var(--grey);
+    margin-top: 28px;
+}
+.subscribtion__plan-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-block: 19px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53;
+    color: var(--purple);
+    margin-top: 36px;
+}
+.subscribtion__plan.active{
+    background-color: var(--orange);
+
+}
+
+.subscribtion__plan.active .subscribtion__plan-title{
+    color: rgb(255, 255, 255, 70%);
+}
+.subscribtion__plan.active .subscribtion__plan-price, .subscribtion__plan.active .subscribtion__plan-features, .subscribtion__plan.active .subscribtion__plan-button{
+    color: white;
+}
+.subscribtion__plan.active .subscribtion__plan-button{
+    background: #9F3919;
+}
+
+/* ===== Mobile: iPhone 12 Pro (390px) и схожие ===== */
+@media (max-width: 768px) {
+    /* --- Шапка --- */
+    .header {
+        padding-block: 16px;
+    }
+    .header__container {
+        max-width: 343px; /* 390 - 2*24 отступа */
+    }
+    .header__nav {
+        flex-wrap: wrap;
+        row-gap: 14px;
+    }
+    .header__list {
+        gap: 22px;
+        order: 3;          /* меню переносится на новую строку */
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header__list-link {
+        font-size: 14px;
+    }
+    .header__list-link.active {
+        padding-bottom: 6px;
+    }
+    .header__button {
+        padding: 12px 28px;
+        font-size: 15px;
+        margin-left: auto;
+    }
+
+    /* Фиксированная шапка стала выше — сдвигаем контент */
+    main {
+        margin-top: 108px;
+    }
+
+    /* --- Hero --- */
+    .hero {
+        padding-block: 30px;
+    }
+    .hero__container {
+        max-width: 343px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__content {
+        max-width: 100%;
+        padding-block: 24px;
+    }
+    .hero__title {
+        font-size: 40px;
+        line-height: 1.15;
+        letter-spacing: -1.2px;
+    }
+    .hero__desc {
+        font-size: 17px;
+        line-height: 26px;
+        margin-top: 16px;
+    }
+    .hero__buttons {
+        margin-top: 28px;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .hero__button {
+        flex: 1;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .hero__scroll {
+        width: 50px;
+        height: 50px;
+    }
+    /* Абсолютная картинка больше не налезает на текст — выводим её потоком */
+    .hero__image {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+    }
+
+    /* --- Логотипы компаний --- */
+    .companies {
+        padding-block: 24px;
+    }
+    .companies__list {
+        flex-wrap: wrap;
+        gap: 24px 28px;
+        justify-content: center;
+    }
+    .companis__company-logo {
+        height: 24px;
+        width: auto;
+    }
+
+    /* --- Фичи: колонка вместо ряда --- */
+    .features {
+        padding-block: 48px;
+    }
+    .feature {
+        flex-direction: column;
+        gap: 24px;
+    }
+    /* Меняем порядок: текст сверху, картинка снизу, как на макете мобилки */
+    .feature:first-child {
+        flex-direction: column-reverse;
+    }
+    .feature__content {
+        max-width: 100%;
+        gap: 16px;
+    }
+    .feature__title {
+        font-size: 30px;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+    .feature__desc {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .feature__image {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+    }
+
+    /* --- Мини-фичи --- */
+    .mini-features {
+        padding-block: 24px;
+    }
+    .mini-features__container {
+        grid-template-columns: 1fr; /* одна колонка */
+        gap: 36px;
+        justify-items: center;
+    }
+    .mini-feature {
+        max-width: 300px;
+    }
+    .mini-features__image {
+        height: 70px;
+    }
+
+    /* --- Тарифы --- */
+    .subscribtion {
+        padding-block: 48px 64px;
+    }
+    .subscribtion__container {
+        max-width: 343px;
+        gap: 40px;
+    }
+    .subscribtion__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .subscribtion__title {
+        font-size: 34px;
+        letter-spacing: -1px;
+        line-height: 1.2;
+    }
+    .subscribtion__title br {
+        display: none; /* на мобилке пусть переносится сам */
+    }
+    .subscribtion__tab {
+        padding: 12px 32px;
+        font-size: 14px;
+    }
+    .subscribtion__plans {
+        grid-template-columns: 1fr; /* карточки стопкой */
+        gap: 14px;
+    }
+    .subscribtion__plan {
+        padding: 28px 20px 24px;
+    }
+    .subscribtion__plan-price {
+        font-size: 44px;
+        margin-top: 14px;
+    }
+    .subscribtion__plan-features {
+        line-height: 34px;
+        margin-top: 16px;
+    }
+}
+
